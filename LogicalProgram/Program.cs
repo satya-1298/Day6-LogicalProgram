@@ -20,6 +20,7 @@ namespace LogicalProgram
                 Console.WriteLine("2-PerfectNumber");
                 Console.WriteLine("3-PrimeNumber");
                 Console.WriteLine("4-ReverseNumber");
+                Console.WriteLine("5-CouponCode");
                 {
                     Console.WriteLine("CHOOSE THE ABOVE OPTIONS");
 
@@ -45,6 +46,11 @@ namespace LogicalProgram
                             Console.WriteLine("Reverse of number");
                             Reverse reverse = new Reverse();
                             reverse.Display();
+                            break;
+                        case 5:
+                            Console.WriteLine("Generating Coupon code");
+                            Coupon coupon = new Coupon();
+                            coupon.Number();
                             break;  
                         default:
                             Console.WriteLine("Invalid Option");
