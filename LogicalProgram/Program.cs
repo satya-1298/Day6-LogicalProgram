@@ -10,14 +10,16 @@ namespace LogicalProgram
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Logical Programs");
+
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Welcome to Logical Programs");
-                
+                Console.WriteLine("\n");
                 Console.WriteLine("1-FibonacciSeries");
                 Console.WriteLine("2-PerfectNumber");
                 Console.WriteLine("3-PrimeNumber");
+                Console.WriteLine("4-ReverseNumber");
                 {
                     Console.WriteLine("CHOOSE THE ABOVE OPTIONS");
 
@@ -39,6 +41,11 @@ namespace LogicalProgram
                             Prime prime = new Prime();
                             prime.Number();
                             break;
+                        case 4:
+                            Console.WriteLine("Reverse of number");
+                            Reverse reverse = new Reverse();
+                            reverse.Display();
+                            break;  
                         default:
                             Console.WriteLine("Invalid Option");
                             break;
