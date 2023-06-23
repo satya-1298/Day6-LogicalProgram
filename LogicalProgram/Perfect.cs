@@ -19,6 +19,7 @@ namespace LogicalProgram
             max = int.Parse(Console.ReadLine());
             for (n = min; n <= max; n++)
             {
+                
                 i = 1;
                 sum = 0;
                 while (i < n)
